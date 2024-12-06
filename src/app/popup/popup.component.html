@@ -1,9 +1,15 @@
+<!-- Première pop-up -->
 <div class="popup-overlay" *ngIf="isVisible">
     <div class="popup-content">
-      <h2>Bienvenue sur notre site !</h2>
-      <p>Nous sommes ravis de vous accueillir.</p>
-      <img src="https://media1.tenor.com/m/3Hiz2WsBer4AAAAd/gragas-gragas-e.gif">
-      <button (click)="close()">Fermer</button>
+      <h2 class="big-boom">BOOOMBA</h2>
+      <button (click)="showNestedPopup()">Fermer</button>
+    </div>
+  </div>
+  
+  <!-- Deuxième pop-up (pop-up imbriquée) -->
+  <div class="nested-popup-overlay" *ngIf="isNestedVisible">
+    <div class="nested-popup-content">
+      <button (click)="closeNested()">Fermer</button>
     </div>
   </div>
   
