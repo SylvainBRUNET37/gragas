@@ -1,0 +1,96 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(45deg, yellow, pink 10px, cyan 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: flash-bg 1s infinite;
+  }
+  
+  .popup-content {
+    background: limegreen;
+    padding: 30px;
+    border: 10px dashed red;
+    border-radius: 50px;
+    box-shadow: 10px 10px 50px magenta, -10px -10px 30px orange;
+    text-align: center;
+    transform: rotate(-10deg);
+    animation: wobble 0.5s infinite ease-in-out;
+  }
+  
+  h2 {
+    color: purple;
+    font-family: "Comic Sans MS", "Chiller", cursive;
+    font-size: 3em;
+    text-shadow: 5px 5px 10px cyan, -3px -3px 5px yellow;
+    animation: shake-text 0.3s infinite;
+  }
+  
+  p {
+    font-size: 1.5em;
+    color: #ff00ff;
+    text-decoration: underline wavy red;
+    margin: 20px 0;
+    animation: spin-text 2s linear infinite;
+  }
+  
+  img {
+    width: 1000px; /* Agrandit considérablement l'image */
+    height: auto;
+    border: 10px dotted magenta;
+    border-radius: 50%;
+    animation: spin-image 3s infinite linear;
+  }  
+  
+  button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: radial-gradient(circle, red, orange, yellow);
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px magenta, 0 0 20px cyan;
+    transition: transform 0.2s;
+  }
+  
+  button:hover {
+    transform: scale(1.3) rotate(10deg);
+    background: linear-gradient(to right, violet, blue, green, yellow, orange, red);
+  }
+  
+  @keyframes flash-bg {
+    0%, 100% { background-color: black; }
+    50% { background-color: darkred; }
+  }
+  
+  @keyframes wobble {
+    0%, 100% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+  }
+  
+  @keyframes shake-text {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes spin-text {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes spin-image {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+  }
+  

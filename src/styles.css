@@ -9,3 +9,5 @@ body {
     height: 100vh; /* L'image couvre toute la hauteur de la fenêtre */
     width: 100vw; /* L'image couvre toute la largeur de la fenêtre */
   }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
