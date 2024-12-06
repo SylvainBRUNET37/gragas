@@ -11,21 +11,21 @@
     align-items: center;
     z-index: 1000;
     animation: flash-bg 1s infinite;
-  }
-  
-  .popup-content {
+}
+
+.popup-content {
     background: url('https://media1.tenor.com/m/TJKtcxLaRqYAAAAd/kda-gragas.gif') center center / cover no-repeat;
-    padding: 50px;
-    border: 15px dashed red;
+    padding: 50px; /* Augmenter le padding pour plus d'espace interne */
+    border: 15px dashed red; /* Border plus épaisse */
     border-radius: 50px;
-    box-shadow: 15px 15px 80px magenta, -15px -15px 50px orange;
+    box-shadow: 15px 15px 80px magenta, -15px -15px 50px orange; /* Ombre plus large et plus prononcée */
     text-align: center;
     transform: rotate(-10deg);
     animation: wobble 0.5s infinite ease-in-out;
-    width: 70%;
-    height: 50%;
-    max-width: 800px;
-  }
+    width: 70%; /* Réduire la largeur initiale pour qu'elle soit plus grande */
+    height: 50%; /* Laisser la hauteur automatique en fonction du contenu */
+    max-width: 800px; /* Taille maximale pour éviter d'être trop grand */
+}
   
   /* Deuxième pop-up */
   .nested-popup-overlay {
@@ -34,26 +34,26 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8); /* Sombre pour faire ressortir le chaos */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2000;
+    z-index: 2000; /* Au-dessus de la première pop-up */
   }
   
   .nested-popup-content {
     background: url('https://media1.tenor.com/m/3Hiz2WsBer4AAAAd/gragas-gragas-e.gif') center center / cover no-repeat;
     padding: 30px;
     border: 10px solid purple;
-    border-radius: 0;
+    border-radius: 0; /* Enlever toute douceur */
     text-align: center;
     color: white;
     animation: spin 2s linear infinite;
-    width: 50%;
-    height: 50%;
+    width: 50%; /* Réduire la largeur initiale pour qu'elle soit plus grande */
+    height: 50%; /* Laisser la hauteur automatique en fonction du contenu */
   }
   
-  /* Animations */
+  /* Horribles Animations */
   @keyframes wobble {
     0%, 100% { transform: rotate(-10deg); }
     50% { transform: rotate(10deg); }
@@ -64,9 +64,8 @@
     50% { background-color: darkred; }
   }
   
-  /* Effet bouton */
   button {
-    position: absolute;
+    position: absolute; /* Permet de déplacer le bouton librement */
     padding: 15px 30px;
     background: radial-gradient(circle, red, orange, yellow);
     border: none;
@@ -77,7 +76,6 @@
     cursor: pointer;
     box-shadow: 0 0 10px magenta, 0 0 20px cyan;
     transition: transform 0.2s;
-
   }
   
   button:hover {
@@ -85,34 +83,12 @@
     background: linear-gradient(to right, violet, blue, green, yellow, orange, red);
   }
   
-  /* Animation pour le bouton : déplacement aléatoire */
-  @keyframes moveButton {
-    0% { top: 10%; left: 10%; }
-    25% { top: 40%; left: 60%; }
-    50% { top: 80%; left: 80%; }
-    75% { top: 20%; left: 90%; }
-    100% { top: 50%; left: 50%; }
-  }
-  
   /* Style pour le texte BOOOOOOOOMBA */
-  .big-boom {
-    font-size: 10em;
-    color: neongreen;
-    text-shadow: 5px 5px 10px yellow, -5px -5px 10px red, 0 0 25px purple, 0 0 50px cyan, 0 0 100px magenta;
-    transform: rotate(-20deg);
-    animation: jump 1s ease-in-out infinite, shake 0.5s ease-in-out infinite;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-  }
-  
-  @keyframes jump {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-  }
-  
-  @keyframes shake {
-    0%, 100% { transform: rotate(-20deg); }
-    25% { transform: rotate(20deg); }
-    50% { transform: rotate(-20deg); }
-    75% { transform: rotate(20deg); }
-  }
-  
+.big-boom {
+    font-size: 10em; /* Super gros ! */
+    color: neongreen; /* Couleur de texte néon */
+    text-shadow: 5px 5px 10px yellow, -5px -5px 10px red, 0 0 25px purple, 0 0 50px cyan, 0 0 100px magenta; /* Ombre de texte moche */
+    transform: rotate(-20deg); /* Déformation de l'angle */
+    animation: jump 1s ease-in-out infinite, shake 0.5s ease-in-out infinite; /* Animations pour ajouter du mouvement */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Utilisation de la pire police possible */
+}
