@@ -39,6 +39,12 @@ export class PopupComponent implements OnInit, OnDestroy {
     this.isNestedVisible = false;
   }
 
+  // Fonction pour fermer les deux pop-ups en même temps
+  closeBothPopups() {
+    this.isVisible = false;
+    this.isNestedVisible = false;
+  }
+
   // Fonction pour déplacer le bouton "Fermer" à une position aléatoire
   moveButtonRandomly() {
     const button = document.querySelector('button');
