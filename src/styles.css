@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://jolstatic.fr/www/captures/957/4/25384.jpg');
+    background-size: 100% 100%; /* L'image occupe tout l'écran */
+    background-position: center; /* L'image est centrée */
+    background-repeat: no-repeat; /* Pas de répétition de l'image */
+    height: 100vh; /* L'image couvre toute la hauteur de la fenêtre */
+    width: 100vw; /* L'image couvre toute la largeur de la fenêtre */
+  }
