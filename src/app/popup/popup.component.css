@@ -13,7 +13,7 @@
   }
   
   .popup-content {
-    background: limegreen;
+    background: url('https://media1.tenor.com/m/TJKtcxLaRqYAAAAd/kda-gragas.gif') center center / cover no-repeat;
     padding: 30px;
     border: 10px dashed red;
     border-radius: 50px;
@@ -40,12 +40,12 @@
   }
   
   img {
-    width: 1000px; /* Agrandit considérablement l'image */
+    width: 500px;
     height: auto;
     border: 10px dotted magenta;
     border-radius: 50%;
     animation: spin-image 3s infinite linear;
-  }  
+  }
   
   button {
     margin-top: 20px;
@@ -91,6 +91,6 @@
   
   @keyframes spin-image {
     0% { transform: rotate(0); }
-    100% { transform: rotate(360deg); }
+    100% { transform: rotate(180deg); }
   }
   
